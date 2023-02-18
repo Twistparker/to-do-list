@@ -20,13 +20,3 @@ tasklist.addEventListener("click",(event)=>{
         event.target.parentElement.remove();
     }
 })
-
-/*li.addEventListener("click",() => {
-    localStorage.setItem("elementState","clicked")
-})
-
-
-window.addEventListener("load", () => {
-    const elementState =localStrage.getItem("li");
-    li.classlist.add("clicked")
-})*/
