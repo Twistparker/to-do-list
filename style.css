@@ -1,72 +1,99 @@
-*{
+body{
     margin: 0;
-    padding: 0;
-
-}
-
-.container{
-    width: 40rem;
-    height: 20rem;
-    background: linear-gradient(#ff5858,#f857a6);
-    margin: 0 auto;
-    margin-top: 10rem;
-    border-radius: 30px;
-}
-
-.input-space-task{
-    display: flex;
-    padding: 2rem;
-    gap: 5px;
-    justify-content: center;
-}
-
-
-.input-space-task #input-space-place{
-    width: 35rem;
-    height: 2.75rem;
-    border-radius:1rem;
-    border: none;
-    background-color:#cc6eb0;
-    color: #ffff;
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;
-    font-size: 1.1rem;
-
-}
-
-.input-space-task #input-add-btn{
-    width: 5rem;
-    background-color: #cc6eb0;
-    border: none;
-    border-radius: 8rem;
-    cursor: pointer;
-    font-size: 1.1rem;
-}
-.input-space-task #input-add-btn:hover{
-    background-color: #3a1024;
-}
-
-
-li{
-    margin: 2rem;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    margin-bottom: 1.1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1rem;
-}
-
-.delet-button{
-    width: 5rem;
-    background-color: #cc6eb0;
-    border: none;
-    border-radius: 8rem;
-    cursor: pointer;
-    font-size: 1.1rem;
-    height: 2.75rem;
+    padding: 0%;
     
 }
 
-.delet-button:hover{
-    background-color: #3a1024;
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: header;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    
+}
+
+
+.header h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: rgb(228, 123, 123);
+   
+    
+}
+
+
+@keyframes header {
+    0%{
+        margin-left: -10000px;
+        color:rgb(150, 228, 221) ;  
+        font-size: 4rem;
+      }
+    100%{
+        margin-left: 120px;
+      
+    }
+}
+
+.players{
+    display: flex;
+    justify-content: space-around;
+}
+
+.computer{
+    color: gray;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+button{
+    padding: 6px 50px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: aqua;
+    
+    
+
+}
+
+button:hover{
+   background-color: rgb(180, 233, 233);
+}
+
+
+#reset{
+    margin-left:20px;
+}
+
+.final-generator{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    animation-name: results;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+#results{
+    font-size: 30px;
+}
+
+
+
+.annoucement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
 }
